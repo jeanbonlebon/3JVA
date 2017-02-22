@@ -1,0 +1,165 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	/*Sticky footer*/
+ 	display: flex;
+ 	min-height: 100vh;
+	flex-direction: column;
+}
+.main_content{
+	/*Sticky footer*/
+    flex: 1 0 auto;
+}
+
+/******************************* nav ***********************************/
+nav{
+	background-color: #333;
+	color:white;
+	height: 79px;
+}
+
+h1.logo{
+	font-weight: 900;
+	font-size:36px;
+	margin: 0.6em 0;
+}
+
+nav .search{
+	background: url(../img/search.png) 98% no-repeat;
+	margin: 10px 0px;
+}
+
+nav .dropdown-button{
+	padding: 17px 17px;
+	height:auto;
+	background-color: transparent;
+	box-shadow:none;
+}
+
+nav .btn:focus, nav .btn-large:focus, nav .btn-floating:focus{
+	background-color: #ff886f;
+}
+nav .btn:hover, nav .btn-large:hover, nav .btn-floating:hover{
+	background-color: #ff886f;
+}
+nav .dropdown-content li>a, nav .dropdown-content li>span{
+	color: #ff886f;
+}
+/******************************* header ***********************************/
+header.main_head{
+	background: url(../img/congruent_pentagon.png) repeat;
+	padding: 40px;
+}
+
+header.main_head h2{
+	line-height: 1.6em;
+}
+
+header.main_head h2 span{
+	color: #ff886f;
+	font-weight: 900;
+}
+
+header.main_head input{
+	background: url(../img/search2.png) 98% 1% no-repeat;
+	font-size: 35px;
+}
+
+/******************************* section ***********************************/
+section{
+	padding:60px 0;
+}
+section h2{
+	text-align: left;
+	color: #ff886f;
+	font-weight: 900;
+}
+
+section figure{
+	margin:0;
+	overflow:hidden;
+}
+
+section figure fieldset{
+	position:relative;
+	margin:0;
+	background-color: #ff886f;
+	color: #000;
+	border:none;
+}
+section figure fieldset h4{
+	font-weight: 600;
+	font-size:25px;
+}
+
+.grow {
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    -webkit-filter: grayscale(50%);
+}
+
+a:hover .grow {
+	transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+}
+
+/******************************* footer ***********************************/
+footer{
+	background:url(../img/footer_lodyas.png);
+	padding:40px 0;
+}
+
+
+
+/********************* PAGINATION / BUTTONS / INPUT *****************************/
+.pagination li.active{
+	background-color:#ff886f;
+}
+
+
+.btn:hover, .btn-large:hover{
+	background-color:#ff886f; 
+}
+.btn, .btn-large{
+	background-color:#ecb2a6;
+}
+
+.input-field .prefix.active {
+  color: #ff886f;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ff886f;
+  box-shadow: 0 1px 0 0 #ff886f;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ff886f;
+}
